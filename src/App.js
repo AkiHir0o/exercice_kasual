@@ -1,12 +1,11 @@
 import './App.css';
+import Cards from "./components/Cards";
 
 function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1> Bienvenue dans l'application de carte Hearthstone</h1>
-      </header>
+        <Cards />
     </div>
   );
 }

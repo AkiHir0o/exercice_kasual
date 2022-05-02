@@ -1,38 +1,106 @@
-body, html{
-  height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;300&family=Quicksand:wght@300&display=swap');
 
+  body, html{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-size: cover;
+  background: linear-gradient(-50deg, black, #363636, #285896) no-repeat fixed;
 }
 
 .App {
   text-align: center;
-  background-color: #282c34;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-header {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
-  min-height: 100vh;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.allCards{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction:row; /*Mettre des tableaux côte à côte*/
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 90px;
+}
+
+.tableCards{
+  margin-right: 100px;
+  border: solid 2px;
+  border-radius: 10px;
+  margin-bottom: 10vh;
+  background-color: rgba(42, 42, 42, 0.62);
+}
+
+.cardName{
+  color: #fdb008;
+  font-size: 20px;
+  width: 256px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 4px;
+  border-radius: 10px;
+  font-family: Quicksand, serif;
+}
+
+.inputSearch{
+  width: 50vh;
+  height: 30px;
+  margin-bottom: 10vh;
+  background-color: rgba(54, 54, 54, 0.41);
+  border-radius: 10px;
+  border-color: rgba(151, 151, 151, 0.58);
+  font-size: 16px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tableCardsError{
+  margin-right: 100px;
+  border: solid 2px;
+  border-radius: 10px;
+  margin-bottom: 10vh;
+  background-color: rgba(42, 42, 42, 0.62);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cardNameError{
+  color: #fdb008;
+  font-size: 20px;
+  width: 256px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  font-family: Quicksand, serif;
+
+}
+
+.cardImgError{
+  width: 200px;
+}
+
+.msgError{
+  color: red;
+  font-size: 12px;
+}
+
+.signature{
+  font-size: 22px;
+  color: #fdb008;
+  font-family: Quicksand, serif;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .logo{
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .inputSearch{
+    width: 30vh;
   }
+
 }
